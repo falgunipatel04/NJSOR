@@ -7,5 +7,6 @@ namespace njsor.api.Model
 
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
+
     }
 }
