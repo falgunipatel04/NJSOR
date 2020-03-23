@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace njsor.api.Dtos
 {
-    public class UserForDtos
+    public class UserForDto
     {
      [Required]
     public string Username { get; set; }

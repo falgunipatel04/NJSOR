@@ -6,10 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using njsor.api.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace njsor.api.Controllers
 {
-
+[Authorize]
  [Route("api/[controller]")]
  [ApiController]
 
@@ -40,7 +41,7 @@ public class ValuesController : ControllerBase
   }
 
   // GET api/values/5
-
+[AllowAnonymous]
   [HttpGet("{id}")]
 
   public  async Task<IActionResult> Get(int id)
